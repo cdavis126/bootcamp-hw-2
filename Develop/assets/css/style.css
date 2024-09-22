@@ -51,6 +51,8 @@ header {
   box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
 }
 
+
+
 header h1 {
   color: var(--tertiary);
   background-color: var(--secondary);
@@ -59,6 +61,13 @@ header h1 {
   font-size: 4vw;
   line-height: 1;
 }
+
+.header ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 
 nav {
   display: flex;
