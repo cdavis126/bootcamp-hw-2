@@ -11,12 +11,6 @@
   --light: rgba(238, 238, 247, 1);
 }
 
-.divider {
-  display: block;
-  margin: 0% auto;
-  width: 1920px;
-  height: 300px;
-}
 
 body {
   margin: 0;
@@ -33,11 +27,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 15px;
 }
 
 p {
-  margin: 0;
+  margin: 15px;
 }
 
 header {
@@ -104,7 +98,7 @@ main {
 
 .hero-banner {
   background: rgb(68, 88, 120);
-  background-image: url("../images/02-hero-bg.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: url("https://jenniferbourn.com/wp-content/uploads/2022/04/200-background-patterns.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
   background-size: cover;
   background-position: center;
   background-blend-mode: soft-light;
@@ -162,6 +156,8 @@ main {
 
 .page-section p {
   margin-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
 }
 
 .flex-container {
@@ -191,6 +187,7 @@ main {
 /* feature first portfolio item */
 .flex-item:first-child {
     min-height: 400px;
+    max-height: 400px;
     flex-basis: 100%;
 }
 
@@ -204,6 +201,8 @@ main {
 }
 
 .flex-item h3 {
+  color: var(--tertiary);
+  background-color: var(--secondary);
   font-size: 1.6rem;
 }
 
@@ -217,7 +216,7 @@ main {
 
 .contact address a {
   color: var(--tertiary);
-  padding: 5px;
+  padding: 25px;
   text-decoration: none;
   font-size: 1.3rem;
   font-style: normal;
@@ -237,30 +236,39 @@ main {
 
 /* portfolio project images */
 /* TODO: Add portfolio project images here using background images*/
-.run-buddy {
+.run-buddy {background-image: url(https://i.postimg.cc/vTZJRwzY/pexels-steve-1509534.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   
 }
 
-.led-wall {
+.led-wall {background-image: url(https://i.postimg.cc/NMSzn254/pexels-jibarofoto-2471235.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   
 }
 
-.react-calc {
+.react-calc {background-image: url(https://i.postimg.cc/630k1pCb/pexels-paduret-1193743.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   
 }
 
-.pastel-puzzles {
+.pastel-puzzles {background-image: url(https://i.postimg.cc/d12ybz0x/pexels-padrinan-255379.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   
 }
 
-.surf-report {
-  
+.surf-report { background-image: url(https://i.postimg.cc/Pq1yqv7N/portfolio2-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* media queries */
 
 /* media queries for a max-width of 980px */
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 0 0 10px 0;
     justify-content: center;
@@ -291,6 +299,15 @@ main {
     text-align: left;
     font-size: 7vw;
   }
-}
+  .flex-item:first-child {
+    min-height: 150px;
+    max-height: 150px;
+    display: flex;
+  flex-direction:column;
+  }
 
+  .flex-item {
+    display: flex;
+    flex-direction:column;
+  }
 /* TODO: add media query for a max-width of 768px */
